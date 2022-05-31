@@ -3,21 +3,43 @@
 <html>
 <head>
   <title>FFHS Web Performance Exercise</title>
-  <link rel="stylesheet" href="style.css" media="all">
-  <link rel="stylesheet" href="style.css" media="all">
-  <link rel="stylesheet" href="style2.css" media="all">
-  <link rel="stylesheet" href="style3.css" media="all">
-  <script src="script.js"></script>
-  <script src="script2.js"></script>
-  <script src="script3.js"></script>
+
+  <!-- styled link in nav not available in index.html -->
+  <!-- <link rel="stylesheet" href="stile.css" media="all"> -->
+
+  <!-- stile2 only colors the h1 red, not a necessity to add a css -->
+  <!-- <link rel="stylesheet" href="stile2.css" media="all"> -->
+
+  <!-- there is no h2 -->
+  <!-- <link rel="stylesheet" href="stile3.css" media="all"> -->
+
+  <!-- script logs only a string, loading a file is mediocre in this case -->
+  <!-- <script src="scipt.js"></script> -->
+
+  <!-- script1 logs only a string, loading a file is mediocre in this case -->
+  <!-- <script src="scipt2.js"></script> -->
+
+  <!-- script2 logs only a string, loading a file is mediocre in this case -->
+  <!-- <script src="scipt3.js"></script> -->
+
+  <!-- newScript summarizes the three console logs and is charged asynchronous -->
+  <script async src="newScript.js"></script>
+  <style>
+    button, h1 {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <h1>Web Performance</h1>
   <button>Click me</button>
-  <img src="https://www.photosforclass.com/download/flickr-3415344838" width="200" height="180">
-  <script>
+  <img src="./res/error.png" width="200" height="180">
+
+  <!-- script never used -->
+  <!-- <script>
     var button = document.querySelector("button");
-    button.style.color = "red";
-  </script>
+    // bit faster when adjusted as html and not script
+    //button.style.color = "red";
+  </script> -->
 </body>
 </html>
